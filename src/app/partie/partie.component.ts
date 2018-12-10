@@ -22,9 +22,7 @@ export class PartieComponent implements OnInit {
 
   ngOnInit() {
     this.getParties();
-    this.myGroup = this.formBuilder.group({
-      nompartie: ''
-    });
+    this.myGroup = this.formBuilder.group({nompartie: ''});
   }
 
   getParties(): void {

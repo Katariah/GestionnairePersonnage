@@ -1,6 +1,6 @@
 export class Joueur {
-    idjoueur: number;
-    namejoueur: string;
+    id: number;
+    name: string;
     idpartie: number;
     sexe: String;
     taille: number;

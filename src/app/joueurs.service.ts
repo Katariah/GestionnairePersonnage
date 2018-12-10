@@ -37,8 +37,8 @@ export class JoueursService {
   }
 
   deleteJoueur (joueur: Joueur): Observable<Joueur> {
-    const idjoueur = typeof joueur === 'number' ? joueur : joueur.idjoueur;
-    const url = `${this.joueursUrl}/${idjoueur}`;
+    const id = typeof joueur === 'number' ? joueur : joueur.id;
+    const url = `${this.joueursUrl}/${id}`;
     return this.http.delete<Joueur>(url, httpOptions);
     }
 

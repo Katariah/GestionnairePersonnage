@@ -1,5 +1,4 @@
 import { Partie } from './partie';
-import { Joueur } from './joueur';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -27,8 +26,8 @@ export class PartieService {
   }
 
   deletePartie (partie: Partie): Observable<Partie> {
-    const idpartie = typeof partie === 'number' ? partie : partie.idpartie;
-    const url = `${this.partiesUrl}/${idpartie}`;
+    const id = typeof partie === 'number' ? partie : partie.id;
+    const url = `${this.partiesUrl}/${id}`;
     return this.http.delete<Partie>(url, httpOptions);
     }
 

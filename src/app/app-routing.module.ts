@@ -6,7 +6,7 @@ import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
 const routes: Routes = [
   { path: '', redirectTo: '/partie', pathMatch: 'full' },
   { path: 'partie', component: PartieComponent },
-  { path: 'partie/:idpartie', component:  ListeJoueursComponent },
+  { path: 'partie/:id', component:  ListeJoueursComponent },
   // { path: 'joueurs', component: ListeJoueursComponent }
 ];
 

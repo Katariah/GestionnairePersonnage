@@ -1,4 +1,4 @@
 export class Partie {
-    idpartie: number;
-    namepartie: string;
+    id: number;
+    name: string;
   }

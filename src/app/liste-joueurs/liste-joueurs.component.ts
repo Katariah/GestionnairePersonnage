@@ -18,7 +18,7 @@ export class ListeJoueursComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.idpartie = +this.route.snapshot.paramMap.get('idpartie');
+    this.idpartie = +this.route.snapshot.paramMap.get('id');
     this.getJoueursByPartie(this.idpartie);
   }
 

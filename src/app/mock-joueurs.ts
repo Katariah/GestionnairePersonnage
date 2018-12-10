@@ -1,14 +1,14 @@
 // import { Joueur } from './joueur';
 
 // export const JOUEURS: Joueur[] = [
-//   { idjoueur: 1, namejoueur: 'Arthur', idpartie: 1},
-//   { idjoueur: 2, namejoueur: 'Lancelot', idpartie: 1},
-//   { idjoueur: 3, namejoueur: 'Perceval', idpartie: 1},
-//   { idjoueur: 4, namejoueur: 'Merlin', idpartie: 1},
-//   { idjoueur: 5, namejoueur: 'Gandalf', idpartie: 2},
-//   { idjoueur: 6, namejoueur: 'Bilbon', idpartie: 3},
-//   { idjoueur: 7, namejoueur: 'Rudolph', idpartie: 3},
-//   { idjoueur: 8, namejoueur: 'Loki', idpartie: 2},
-//   { idjoueur: 9, namejoueur: 'Thor', idpartie: 3},
-//   { idjoueur: 10, namejoueur: 'Peter Parker', idpartie: 1},
+//   { id: 1, namejoueur: 'Arthur', id: 1},
+//   { id: 2, namejoueur: 'Lancelot', id: 1},
+//   { id: 3, namejoueur: 'Perceval', id: 1},
+//   { id: 4, namejoueur: 'Merlin', id: 1},
+//   { id: 5, namejoueur: 'Gandalf', id: 2},
+//   { id: 6, namejoueur: 'Bilbon', id: 3},
+//   { id: 7, namejoueur: 'Rudolph', id: 3},
+//   { id: 8, namejoueur: 'Loki', id: 2},
+//   { id: 9, namejoueur: 'Thor', id: 3},
+//   { id: 10, namejoueur: 'Peter Parker', id: 1},
 // ];
