@@ -13,5 +13,5 @@ export class Joueur {
     dexterite: number;
     constitution: number;
     chance: number;
-    note: String;
+    note: String[];
   }
