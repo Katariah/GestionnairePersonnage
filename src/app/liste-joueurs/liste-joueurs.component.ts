@@ -16,6 +16,6 @@ export class ListeJoueursComponent implements OnInit {
   ngOnInit() {
   }
 
-  getJoueursByPartie(idpartie): 
+  // getJoueursByPartie(idpartie): 
 
 }
