@@ -13,8 +13,8 @@ const httpOptions = {
 })
 export class JoueursService {
 
-  private partiesUrl = 'api/parties';
-  private joueursUrl = 'api/joueurs';
+  private partiesUrl = 'http://localhost:3000/partie';
+  private joueursUrl = 'http://localhost:3000/joueurs';
 
   constructor(private http: HttpClient) { }
 

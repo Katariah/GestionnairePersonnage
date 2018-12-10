@@ -9,9 +9,6 @@ import { FormsModule } from '@angular/forms';
 import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
 
 import { HttpClientModule } from '@angular/common/http';
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
-import { InMemoryDataService } from './in-memory-data.service';
-
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -25,7 +22,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false }),
     ReactiveFormsModule
   ],
   providers: [],
