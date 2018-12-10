@@ -27,7 +27,7 @@ export class PartieService {
 
   deletePartie (partie: Partie): Observable<Partie> {
     const id = typeof partie === 'number' ? partie : partie.id;
-    const url = `${this.partiesUrl}/${id}`;
+    const url = `${this.partiesUrl}/${partie.id}`;
     return this.http.delete<Partie>(url, httpOptions);
     }
 

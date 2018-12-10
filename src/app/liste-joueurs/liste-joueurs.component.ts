@@ -23,8 +23,13 @@ export class ListeJoueursComponent implements OnInit {
   }
 
   getJoueursByPartie(idpartie): void {
-    this.joueursService.getJoueursByPartie(idpartie)
-    .subscribe(joueurs => this.joueurs = joueurs);
+    if (!idpartie) { this.joueursService
+      .getJoueurs()
+      .subscribe(joueurs => this.joueurs = joueurs);
+    } else {
+      this.joueursService.getJoueursByPartie(idpartie)
+        .subscribe(joueurs => this.joueurs = joueurs);
+    }
   }
 
 }

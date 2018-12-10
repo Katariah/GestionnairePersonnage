@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/partie', pathMatch: 'full' },
   { path: 'partie', component: PartieComponent },
   { path: 'partie/:id', component:  ListeJoueursComponent },
-  // { path: 'joueurs', component: ListeJoueursComponent }
+  { path: 'joueurs', component: ListeJoueursComponent }
 ];
 
 @NgModule({

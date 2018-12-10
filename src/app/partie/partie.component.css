@@ -17,6 +17,8 @@
 
   .parties {
       text-align: center;
+      display: inline-block;
+      align-items: center;
   }
   
   @media (max-width: 600px) {
