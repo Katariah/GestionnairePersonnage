@@ -22,4 +22,5 @@ export class PartieComponent implements OnInit {
     this.partieService.getParties().subscribe(parties => this.parties = parties);
   }
 
+
 }

@@ -32,8 +32,8 @@ export class PartieService {
     return this.http.delete<Partie>(url, httpOptions);
     }
 
-  addJoueur(joueur: Joueur): Observable<Joueur> {
-    return this.http.post<Joueur>(this.joueursUrl, joueur, httpOptions);
-  }
+  // addJoueur(joueur: Joueur): Observable<Joueur> {
+  //   return this.http.post<Joueur>(this.joueursUrl, joueur, httpOptions);
+  // }
 
 }
