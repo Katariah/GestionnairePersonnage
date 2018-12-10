@@ -1,10 +1,8 @@
-import { Partie } from './partie';
 import { Joueur } from './joueur';
 import { Observable, of } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { JOUEURS } from './mock-joueurs';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -13,7 +11,7 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
-export class PartieService {
+export class JoueursService {
 
   private partiesUrl = 'api/parties';
   private joueursUrl = 'api/joueurs';

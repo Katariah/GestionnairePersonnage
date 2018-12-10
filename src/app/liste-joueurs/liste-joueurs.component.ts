@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Joueur } from '../joueur';
-import { JOUEURS } from '../mock-joueurs';
+import { ActivatedRoute } from '@angular/router';
+import { JoueursService } from '../joueurs.service';
 
 @Component({
   selector: 'app-liste-joueurs',
@@ -9,13 +9,22 @@ import { JOUEURS } from '../mock-joueurs';
 })
 export class ListeJoueursComponent implements OnInit {
 
-  joueurs = JOUEURS;
+  joueurs = [];
+  idpartie: number;
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private joueursService: JoueursService
+  ) { }
 
   ngOnInit() {
+    this.idpartie = +this.route.snapshot.paramMap.get('idpartie');
+    this.getJoueursByPartie(this.idpartie);
   }
 
-  // getJoueursByPartie(idpartie): 
+  getJoueursByPartie(idpartie): void {
+    this.joueursService.getJoueursByPartie(idpartie)
+    .subscribe(joueurs => this.joueurs = joueurs);
+  }
 
 }

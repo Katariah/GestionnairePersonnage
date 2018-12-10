@@ -6,8 +6,8 @@ import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
 const routes: Routes = [
   { path: '', redirectTo: '/partie', pathMatch: 'full' },
   { path: 'partie', component: PartieComponent },
-  // { path: 'joueur/:id', component:  },
-  { path: 'joueurs', component: ListeJoueursComponent }
+  { path: 'partie/:idpartie', component:  ListeJoueursComponent },
+  // { path: 'joueurs', component: ListeJoueursComponent }
 ];
 
 @NgModule({
