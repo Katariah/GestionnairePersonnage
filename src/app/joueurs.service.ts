@@ -1,5 +1,5 @@
 import { Joueur } from './joueur';
-import { Observable, of } from 'rxjs';
+import { Observable, of, Subject } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -15,6 +15,11 @@ export class JoueursService {
 
   private partiesUrl = 'http://localhost:3000/partie';
   private joueursUrl = 'http://localhost:3000/joueurs';
+  private joueurSelected = new Subject<Joueur>();
+  joueurSelected$ = this.joueurSelected.asObservable();
+  listeModifiee = new Subject<void>();
+  listeModifiee$ = this.listeModifiee.asObservable();
+
 
   constructor(private http: HttpClient) { }
 
@@ -22,13 +27,13 @@ export class JoueursService {
     return this.http.get<Joueur[]>(this.joueursUrl);
   }
 
-  getJoueursByPartie (idpartie: number): Observable<Joueur[]> {
+  getJoueursByPartie(idpartie: number): Observable<Joueur[]> {
     const joueurpartie = this.http.get<Joueur[]>(this.joueursUrl)
-    .pipe(
+      .pipe(
         map(joueurs => joueurs.filter(
-                joueur => joueur.idpartie === idpartie)
+          joueur => joueur.idpartie === idpartie)
         )
-    );
+      );
     return joueurpartie;
   }
 
@@ -36,10 +41,29 @@ export class JoueursService {
     return this.http.post<Joueur>(this.joueursUrl, joueur, httpOptions);
   }
 
-  deleteJoueur (joueur: Joueur): Observable<Joueur> {
+  deleteJoueur(joueur: Joueur): Observable<Joueur> {
     const id = typeof joueur === 'number' ? joueur : joueur.id;
     const url = `${this.joueursUrl}/${id}`;
     return this.http.delete<Joueur>(url, httpOptions);
-    }
+  }
+
+  getJoueurById(id: number): Observable<Joueur> {
+    const joueur = this.http.get<Joueur>(`${this.joueursUrl}/${id}`);
+    return joueur;
+  }
+
+  selectJoueur(joueur: Joueur) {
+    this.joueurSelected.next(joueur);
+  }
+
+  informUpdatedList() {
+    this.listeModifiee.next();
+  }
+
+  updateJoueur(joueur: Joueur): Observable<any> {
+    const id = typeof joueur === 'number' ? joueur : joueur.id;
+    const url = `${this.joueursUrl}/${id}`;
+    return this.http.put(url, joueur, httpOptions);
+  }
 
 }

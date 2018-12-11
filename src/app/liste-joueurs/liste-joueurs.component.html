@@ -1,4 +1,3 @@
-
 <ul class="joueurs">
     <li *ngFor="let joueur of joueurs" (click)="onSelect(joueur)">
         {{joueur.id}} {{joueur.name}}
@@ -7,6 +6,6 @@
 
 <button routerLink="creationjoueur">Ajouter un joueur</button>
 
-<div *ngIf="selectedJoueur">
+<div class="blocs">
     <app-fiche></app-fiche>
 </div>

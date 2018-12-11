@@ -3,7 +3,7 @@
 </div>
 
 <br><br>
-
+<div class="centrer">
 <div class="parties" *ngFor="let partie of parties">
   <div class="module" routerLink="/partie/{{partie.id}}">
     {{partie.name}}
@@ -12,7 +12,7 @@
     <button class="delete" (click)="deletePartie(partie)">Supprimer</button>
   </div>
 </div>
-
+</div>
 <br><br><br><br>
 
 <div class="nouvelle" [formGroup]="myGroup">

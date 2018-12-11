@@ -32,7 +32,7 @@
     text-align: center;
   }
 
-  .affichermere {
+   .affichermere {
     text-align: center;
     display: flex;
     justify-content:center;
@@ -45,3 +45,7 @@
     color: #363413;
     text-decoration: underline;
   }
+
+.centrer {
+  text-align: center;
+}

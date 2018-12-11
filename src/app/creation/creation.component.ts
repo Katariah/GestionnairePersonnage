@@ -35,13 +35,14 @@ export class CreationComponent implements OnInit {
     this.joueur.idpartie = +this.route.snapshot.paramMap.get('id');
   }
 
-  addJoueur(joueur) {
+  addJoueur() {
     if (this.nouveauJoueurForm.valid) {
-      joueur = this.nouveauJoueurForm.value as Joueur;
+      const joueur = this.nouveauJoueurForm.value;
+      joueur.idpartie = this.joueur.idpartie;
       this.joueursService.addJoueur(joueur).subscribe(
-        _ => this.router.navigate(['partie/{{idpartie}}']),
+        _ => this.router.navigate([`partie/${this.joueur.idpartie}`]),
         error => console.log(error)
       );
     }
   }
-
+}

@@ -1,3 +1,68 @@
-<p>
-  fiche works!
-</p>
+<div *ngIf="joueur">
+    <div>
+        <label>Nom :
+            <input [(ngModel)]="joueur.name" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label>Sexe :
+            <input [(ngModel)]="joueur.sexe" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label>Taille :
+            <input [(ngModel)]="joueur.taille" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label>Poids :
+            <input [(ngModel)]="joueur.poids" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label>Classe :
+            <input [(ngModel)]="joueur.classe" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label>Race :
+            <input [(ngModel)]="joueur.race" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label>Intelligence :
+            <input [(ngModel)]="joueur.intelligence" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label>Force :
+            <input [(ngModel)]="joueur.force" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label>Dextérité :
+            <input [(ngModel)]="joueur.dexterite" placeholder="">
+        </label>
+    </div>
+
+    <div>
+        <label>Constitution :
+            <input [(ngModel)]="joueur.constitution" placeholder="">
+        </label>
+    </div>
+
+    <div>
+        <label>Chance :
+            <input [(ngModel)]="joueur.chance" placeholder="">
+        </label>
+    </div>
+    <div>
+        <label>Note(s) :
+            <input [(ngModel)]="joueur.note" placeholder="">
+        </label>
+    </div>
+    <div class="supprimer">
+        <button class="delete" (click)="deleteJoueur(joueur)">Supprimer</button>
+        <button type="submit" class="editer" (click)="editJoueur(joueur)">Editer</button>
+    </div>
+</div>

@@ -189,11 +189,6 @@
       "note": "Enfant de dragon"
     },
     {
-      "idpartie": 1,
-      "name": "Dede",
-      "id": 18
-    },
-    {
       "name": "Dede2",
       "sexe": "",
       "taille": "",
@@ -224,6 +219,72 @@
       "chance": 10,
       "note": "Nain à lancer",
       "id": 20
+    },
+    {
+      "name": "Dede4",
+      "sexe": "",
+      "taille": "",
+      "poids": "",
+      "photo": "",
+      "classe": "",
+      "race": "",
+      "intelligence": "",
+      "force": "",
+      "dexterite": "",
+      "constitution": "",
+      "chance": "",
+      "note": "",
+      "id": 21
+    },
+    {
+      "name": "Dede7",
+      "sexe": "",
+      "taille": "",
+      "poids": "",
+      "photo": "",
+      "classe": "",
+      "race": "",
+      "intelligence": "",
+      "force": "",
+      "dexterite": "",
+      "constitution": "",
+      "chance": "",
+      "note": "",
+      "id": 22
+    },
+    {
+      "name": "Dede5",
+      "sexe": "",
+      "taille": "",
+      "poids": "",
+      "photo": "",
+      "classe": "",
+      "race": "",
+      "intelligence": "",
+      "force": "",
+      "dexterite": "",
+      "constitution": "",
+      "chance": "",
+      "note": "",
+      "idpartie": 1,
+      "id": 23
+    },
+    {
+      "name": "Dede7",
+      "sexe": "malekk",
+      "taille": 210,
+      "poids": 230,
+      "photo": "jlmkjmkljkfds",
+      "classe": "Bourrin",
+      "race": "Géant2",
+      "intelligence": 8,
+      "force": 19,
+      "dexterite": 8,
+      "constitution": 16,
+      "chance": 14,
+      "note": "Attention, il fait bobo (et à la porte d'après Laurent)",
+      "idpartie": 1,
+      "id": 24
     }
   ]
 }

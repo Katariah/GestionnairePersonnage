@@ -13,6 +13,8 @@ export class ListeJoueursComponent implements OnInit {
   joueurs = [];
   idpartie: number;
   selectedJoueur: Joueur;
+  id: number;
+  joueur: Joueur;
 
   constructor(
     private route: ActivatedRoute,
@@ -22,10 +24,13 @@ export class ListeJoueursComponent implements OnInit {
   ngOnInit() {
     this.idpartie = +this.route.snapshot.paramMap.get('id');
     this.getJoueursByPartie(this.idpartie);
+    this.joueursService.listeModifiee$.subscribe(
+      () => this.getJoueursByPartie(this.idpartie));
   }
 
   getJoueursByPartie(idpartie): void {
-    if (!idpartie) { this.joueursService
+    if (!idpartie) {
+      this.joueursService
       .getJoueurs()
       .subscribe(joueurs => this.joueurs = joueurs);
     } else {
@@ -35,7 +40,7 @@ export class ListeJoueursComponent implements OnInit {
   }
 
   onSelect(joueur: Joueur): void {
-    this.selectedJoueur = joueur;
+    this.joueursService.selectJoueur(joueur);
   }
 
 }
