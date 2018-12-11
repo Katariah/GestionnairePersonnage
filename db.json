@@ -190,12 +190,40 @@
     },
     {
       "idpartie": 1,
-      "id": 17
-    },
-    {
-      "idpartie": 1,
       "name": "Dede",
       "id": 18
+    },
+    {
+      "name": "Dede2",
+      "sexe": "",
+      "taille": "",
+      "poids": "",
+      "photo": "",
+      "classe": "",
+      "race": "",
+      "intelligence": "",
+      "force": "",
+      "dexterite": "",
+      "constitution": "",
+      "chance": "",
+      "note": "",
+      "id": 19
+    },
+    {
+      "name": "Karim",
+      "sexe": "male",
+      "taille": 140,
+      "poids": 62,
+      "photo": "lkjklfdmjsmklfjmlds",
+      "classe": "Proxénète",
+      "race": "Nain",
+      "intelligence": 7,
+      "force": 17,
+      "dexterite": 9,
+      "constitution": 15,
+      "chance": 10,
+      "note": "Nain à lancer",
+      "id": 20
     }
   ]
 }

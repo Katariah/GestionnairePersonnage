@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { JoueursService } from '../joueurs.service';
+import { Joueur } from '../joueur';
 
 @Component({
   selector: 'app-liste-joueurs',
@@ -11,6 +12,7 @@ export class ListeJoueursComponent implements OnInit {
 
   joueurs = [];
   idpartie: number;
+  selectedJoueur: Joueur;
 
   constructor(
     private route: ActivatedRoute,
@@ -30,6 +32,10 @@ export class ListeJoueursComponent implements OnInit {
       this.joueursService.getJoueursByPartie(idpartie)
         .subscribe(joueurs => this.joueurs = joueurs);
     }
+  }
+
+  onSelect(joueur: Joueur): void {
+    this.selectedJoueur = joueur;
   }
 
 }
