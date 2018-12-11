@@ -10,12 +10,16 @@ import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FicheComponent } from './fiche/fiche.component';
+import { CreationComponent } from './creation/creation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PartieComponent,
-    ListeJoueursComponent
+    ListeJoueursComponent,
+    FicheComponent,
+    CreationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,11 @@
 /* Application-wide Styles */
 h1 {
-    color: rgb(61, 141, 221);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 200%;
-    text-align: left;
-  }
-  .barre {
-    margin-top: -1%;
-    background-color: rgb(56, 56, 56);
+    color: rgb(34, 21, 6);
+    font-family: "Edwardian Script ITC";
+    font-size: 300%;
+    text-align: center;
+    margin-top : 1%;
+    font-weight: bold;
   }
   body {
     margin: 0em;

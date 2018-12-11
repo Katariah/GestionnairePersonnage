@@ -1,0 +1,35 @@
+  <h1>Ajouter un joueur <button type="submit" class="ajouter" (click)="addJoueur(joueur)">Ajouter</button></h1> 
+    <div class="formulaire">
+      Pseudo du personnage : <input type="text" [(ngModel)]="joueur.name" value="" required>
+      <br><br>
+      <label>Male
+          <input type="radio" [(ngModel)]="joueur.sexe" value="male">
+          </label>
+          <label>Femelle
+          <input type="radio" [(ngModel)]="joueur.sexe" value="femelle">
+          </label>
+      <br><br>
+      Taille en cm : <input type="number" name="taille" value="">
+      <br><br>
+      Poids en kg : <input type="number" name="poids" value="">
+      <br><br>
+      URL de l'image : <input type="text" name="photo" value="">
+      <br><br>
+      Classe : <input type="text" name="classe" value="">
+      <br><br>
+      Race : <input type="text" name="race" value="">
+      <br><br>
+      Intelligence : <input type="number" name="intelligence" value=""> / 20
+      <br><br>
+      Force : <input type="number" name="force" value=""> / 20
+      <br><br>
+      Dextérité : <input type="number" name="dexterite" value=""> / 20
+      <br><br>
+      Constitution : <input type="number" name="constitution" value=""> / 20
+      <br><br>
+      Chance : <input type="number" name="chance" value=""> / 20
+      <br><br>
+      Notes du MJ :
+      <br>
+      <textarea name="note"></textarea>
+</div>

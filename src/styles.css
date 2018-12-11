@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     margin: 0%;
+    background-image: url("https://i.pinimg.com/originals/00/b5/0c/00b50c32bcf11110df185e2514dbf561.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

@@ -1,4 +1,10 @@
-<div class="parties" *ngFor="let partie of parties" >
+<div class="affichermere">
+  <div class="afficher" routerLink="/joueurs">Afficher tous les joueurs</div>
+</div>
+
+<br><br>
+
+<div class="parties" *ngFor="let partie of parties">
   <div class="module" routerLink="/partie/{{partie.id}}">
     {{partie.name}}
   </div>
@@ -6,9 +12,9 @@
     <button class="delete" (click)="deletePartie(partie)">Supprimer</button>
   </div>
 </div>
+
 <br><br><br><br>
-<div routerLink="/joueurs">Afficher tous les joueurs</div>
-<br><br><br><br>
+
 <div class="nouvelle" [formGroup]="myGroup">
   Nom de la nouvelle partie :
   <input type="text" value="" formControlName="nompartie" />

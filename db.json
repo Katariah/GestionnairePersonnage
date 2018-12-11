@@ -15,10 +15,6 @@
     {
       "name": "Partie 4",
       "id": 4
-    },
-    {
-      "name": "Partie 6",
-      "id": 6
     }
   ],
   "joueurs": [
@@ -191,6 +187,15 @@
       "constitution": 16,
       "chance": 10,
       "note": "Enfant de dragon"
+    },
+    {
+      "idpartie": 1,
+      "id": 17
+    },
+    {
+      "idpartie": 1,
+      "name": "Dede",
+      "id": 18
     }
   ]
 }

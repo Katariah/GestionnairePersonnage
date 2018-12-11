@@ -1,0 +1,16 @@
+h1 {
+    color: rgb(34, 21, 6);
+    font-family: "Edwardian Script ITC";
+    font-size: 200%;
+    text-align: left;
+    margin-left : 1%;
+    font-weight: bold;
+  }
+
+  .formulaire {
+    margin-left : 3%;
+  }
+
+  .ajouter {
+      margin: 15px;
+  }
