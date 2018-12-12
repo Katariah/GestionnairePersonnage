@@ -19,3 +19,17 @@
 .liste {
     vertical-align: top;
 }
+
+.boutonadd {
+    background: transparent;
+    border-width: 0px;
+    cursor: pointer;
+    padding-left: 30px;
+  }
+
+  .boutonretour {
+    padding-left: 30px;
+    background: transparent;
+    border-width: 0px;
+    cursor: pointer;
+  }

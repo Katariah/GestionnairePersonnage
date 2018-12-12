@@ -1,31 +1,24 @@
 <div class="affichermere">
   <div class="afficher" routerLink="/joueurs">Afficher tout les joueurs</div>
 </div>
-
-<br><br>
+<div class="divider">
+  <img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/separator_line.png"><br>
+</div>
 <div class="centrer">
-<div class="parties" *ngFor="let partie of parties">
-  <div class="module" routerLink="/partie/{{partie.id}}">
-    {{partie.name}}
-  </div>
-  <div class="supprimer">
-    <button class="delete" (click)="deletePartie(partie)">Supprimer</button>
+  <div class="parties" *ngFor="let partie of parties">
+    <div class="module" routerLink="/partie/{{partie.id}}">
+      {{partie.name}}
+    </div>
+    <div class="supprimer">
+      <button class="boutondelete" (click)="deletePartie(partie)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_delete_black_18dp66294009602.png"></button>
+    </div>
   </div>
 </div>
+<div class="divider">
+  <img class="divider" src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/separator_line.png"><br><br>
 </div>
-<br><br><br><br>
-
 <div class="nouvelle" [formGroup]="myGroup">
   Nom de la nouvelle partie :
   <input type="text" value="" formControlName="nompartie" />
-  <button (click)="addPartie(nompartie)">Ajouter</button>
+  <button class="boutonadd" (click)="addPartie(nompartie)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_add_circle_black_18dp92817963810.png"></button>
 </div>
-
-<!-- <div>
-  <label>Hero name:
-    <input #heroName />
-  </label>
- <button (click)="add(heroName.value); heroName.value=''">
-    add
-  </button>
-</div> -->

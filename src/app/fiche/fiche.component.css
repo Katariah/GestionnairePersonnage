@@ -1,0 +1,9 @@
+.delete {
+    background: transparent;
+    border-width: 0px;
+    cursor: pointer;
+  }
+
+  .supprimer {
+      display: flex;
+  }

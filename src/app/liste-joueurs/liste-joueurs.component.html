@@ -1,13 +1,16 @@
 <div class="parent">
-    <div class="liste">
-        <!-- <ul class="joueurs"> -->
-            <li *ngFor="let joueur of joueurs" (click)="onSelect(joueur)">
-                {{joueur.name}}
-            </li>
-        <!-- </ul> -->
 
-        <button routerLink="creationjoueur">Ajouter un joueur</button>
-        <button routerLink="/partie">Retourner à la liste des parties</button>
+    <div class="liste">
+        <button class="boutonretour" routerLink="/partie"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_reply_all_black_18dp.png">Retour
+            aux parties</button>
+        <button class="boutonadd" routerLink="creationjoueur"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_add_circle_black_18dp.png">Ajouter
+            un joueur</button>
+
+        <img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/separator_line.png"><br>
+        
+        <li *ngFor="let joueur of joueurs" (click)="onSelect(joueur)">
+            {{joueur.name}}
+        </li><br>
     </div>
     <div class="fiche">
         <div class="blocs">

@@ -22,8 +22,23 @@ textarea {
 
 li {
 list-style-image: url('https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_visibility_black_18dp.png');
+padding-left: 30px
 }
 
 input[type=number] {
     width: 40px;
+}
+
+img {
+    align-items: center;
+    justify-content:center;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+button {
+    font-family: "French Script MT";
+    font-size: 24pt;
+    /* display: table; */
+    vertical-align: middle;
 }
