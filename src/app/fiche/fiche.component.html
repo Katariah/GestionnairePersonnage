@@ -31,34 +31,34 @@
     </div>
     <div>
         <label>Intelligence :
-            <input [(ngModel)]="joueur.intelligence" placeholder="">
+            <input type="number" [(ngModel)]="joueur.intelligence" placeholder=""> / 20
         </label>
     </div>
     <div>
         <label>Force :
-            <input [(ngModel)]="joueur.force" placeholder="">
+            <input type="number" [(ngModel)]="joueur.force" placeholder=""> / 20
         </label>
     </div>
     <div>
         <label>Dextérité :
-            <input [(ngModel)]="joueur.dexterite" placeholder="">
+            <input type="number" [(ngModel)]="joueur.dexterite" placeholder=""> / 20
         </label>
     </div>
 
     <div>
         <label>Constitution :
-            <input [(ngModel)]="joueur.constitution" placeholder="">
+            <input type="number" [(ngModel)]="joueur.constitution" placeholder=""> / 20
         </label>
     </div>
 
     <div>
         <label>Chance :
-            <input [(ngModel)]="joueur.chance" placeholder="">
+            <input type="number" [(ngModel)]="joueur.chance" placeholder=""> /20
         </label>
     </div>
     <div>
-        <label>Note(s) :
-            <input [(ngModel)]="joueur.note" placeholder="">
+        <label>Note(s) :<br>
+            <textarea [(ngModel)]="joueur.note" placeholder="" cols="100" rows="4"></textarea>
         </label>
     </div>
     <div class="supprimer">

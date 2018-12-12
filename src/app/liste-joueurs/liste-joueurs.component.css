@@ -1,6 +1,21 @@
 .blocs {
     display: inline-block;
-    margin-left: 20%;
-    justify-content:center;
-    align-items:center;
+    margin-left: 10%;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+}
+
+.parent {
+    display: inline-flex;
+    vertical-align: top;
+    width: 100%;
+}
+
+.fiche {
+    width: 80%;
+}
+
+.liste {
+    vertical-align: top;
 }

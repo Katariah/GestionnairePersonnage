@@ -7,3 +7,23 @@ body {
     font-family: "French Script MT";
     font-size: 24pt;
 }
+
+input {
+    background: transparent;
+    font-family: "French Script MT";
+    font-size: 18pt;
+}
+
+textarea {
+    background: transparent;
+    font-family: "French Script MT";
+    font-size: 18pt;
+}
+
+li {
+list-style-image: url('https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_visibility_black_18dp.png');
+}
+
+input[type=number] {
+    width: 40px;
+}

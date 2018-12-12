@@ -1,12 +1,17 @@
-<ul class="joueurs">
-    <li *ngFor="let joueur of joueurs" (click)="onSelect(joueur)">
-        {{joueur.id}} {{joueur.name}}
-    </li>
-</ul>
+<div class="parent">
+    <div class="liste">
+        <!-- <ul class="joueurs"> -->
+            <li *ngFor="let joueur of joueurs" (click)="onSelect(joueur)">
+                {{joueur.name}}
+            </li>
+        <!-- </ul> -->
 
-<button routerLink="creationjoueur">Ajouter un joueur</button>
-<button routerLink="/partie">Retourner à la liste des parties</button>
-
-<div class="blocs">
-    <app-fiche></app-fiche>
+        <button routerLink="creationjoueur">Ajouter un joueur</button>
+        <button routerLink="/partie">Retourner à la liste des parties</button>
+    </div>
+    <div class="fiche">
+        <div class="blocs">
+            <app-fiche></app-fiche>
+        </div>
+    </div>
 </div>

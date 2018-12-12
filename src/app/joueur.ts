@@ -5,7 +5,6 @@ export class Joueur {
     sexe: String;
     taille: number;
     poids: number;
-    photo: String;
     classe: String;
     race: String;
     intelligence: number;

@@ -1,37 +1,36 @@
-<h1>Ajouter un joueur <button type="submit" class="ajouter" (click)="addJoueur()">Ajouter</button></h1>
+<h1>Ajouter un joueur</h1>
 <div class="formulaire">
   <form [formGroup]="nouveauJoueurForm">
     Pseudo du personnage : <input type="text" formControlName="name" value="" required>
-    <br><br>
+    <br>
     <label>Male
       <input type="radio" formControlName="sexe" value="male">
     </label>
     <label>Femelle
       <input type="radio" formControlName="sexe" value="femelle">
     </label>
-    <br><br>
+    <br>
     Taille en cm : <input type="number" formControlName="taille" value="">
-    <br><br>
+    <br>
     Poids en kg : <input type="number" formControlName="poids" value="">
-    <br><br>
-    URL de l'image : <input type="text" formControlName="photo" value="">
-    <br><br>
+    <br>
     Classe : <input type="text" formControlName="classe" value="">
-    <br><br>
+    <br>
     Race : <input type="text" formControlName="race" value="">
-    <br><br>
+    <br>
     Intelligence : <input type="number" formControlName="intelligence" value=""> / 20
-    <br><br>
+    <br>
     Force : <input type="number" formControlName="force" value=""> / 20
-    <br><br>
+    <br>
     Dextérité : <input type="number" formControlName="dexterite" value=""> / 20
-    <br><br>
+    <br>
     Constitution : <input type="number" formControlName="constitution" value=""> / 20
-    <br><br>
+    <br>
     Chance : <input type="number" formControlName="chance" value=""> / 20
-    <br><br>
+    <br>
     Notes du MJ :
     <br>
-    <textarea formControlName="note"></textarea>
+    <textarea formControlName="note" cols="100" rows="4"></textarea>
   </form>
+  <button type="submit" class="ajouter" (click)="addJoueur()">Ajouter</button>
 </div>
