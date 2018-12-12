@@ -13,4 +13,7 @@ h1 {
 
   .ajouter {
       margin: 15px;
+      background: transparent;
+      border-width: 0px;
+      cursor: pointer;
   }

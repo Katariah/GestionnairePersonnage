@@ -15,6 +15,10 @@
     {
       "name": "Partie 4",
       "id": 4
+    },
+    {
+      "name": "Test",
+      "id": 5
     }
   ],
   "joueurs": [
@@ -179,52 +183,38 @@
       "note": "Enfant de dragon"
     },
     {
-      "name": "Dede5",
-      "sexe": "",
-      "taille": "",
-      "poids": "",
-      "classe": "",
-      "race": "",
-      "intelligence": "",
-      "force": "",
-      "dexterite": "",
-      "constitution": "",
-      "chance": "",
-      "note": "",
-      "idpartie": 1,
-      "id": 23
+      "name": "Barbatruc",
+      "sexe": "male",
+      "taille": 180,
+      "poids": 150,
+      "photo": "",
+      "classe": "Papa",
+      "race": "Barbapapa",
+      "intelligence": 10,
+      "force": 10,
+      "dexterite": 16,
+      "constitution": 13,
+      "chance": 20,
+      "note": "A griller comme un marshmallow",
+      "idpartie": 5,
+      "id": 11
     },
     {
-      "name": "Dede7",
-      "sexe": "malekk",
-      "taille": 210,
-      "poids": 230,
-      "classe": "Bourrin",
-      "race": "Géant2",
-      "intelligence": 8,
-      "force": 19,
-      "dexterite": 8,
-      "constitution": 16,
-      "chance": 14,
-      "note": "Attention, il fait bobo (et à la porte d'après Laurent)",
-      "idpartie": 1,
-      "id": 24
-    },
-    {
-      "name": "Jesaispas",
-      "sexe": "",
-      "taille": 20,
-      "poids": 4,
-      "classe": "",
-      "race": "",
-      "intelligence": 18,
-      "force": 13,
-      "dexterite": "",
-      "constitution": "",
-      "chance": "",
-      "note": "Ceci est un test concernant du gros texte dans les notes pour voir si le texte est expensible dans la zone d'édit et visibilité du personnage. Faut juste que je trouve quoi dire pour remplir l'espace. Euh... Laurent ? T'as de l'idée ?vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv Super, merci Laurent.",
-      "idpartie": 1,
-      "id": 25
+      "name": "Bibiphoque",
+      "sexe": "femelle",
+      "taille": -1,
+      "poids": 40,
+      "photo": "",
+      "classe": "Bibique",
+      "race": "Phoque",
+      "intelligence": 19,
+      "force": 18,
+      "dexterite": 18,
+      "constitution": 10,
+      "chance": 12,
+      "note": "Aussi appelée Bibibaleine",
+      "idpartie": 5,
+      "id": 12
     }
   ]
 }
