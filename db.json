@@ -64,9 +64,9 @@
       "classe": "Paladin",
       "race": "Humain",
       "intelligence": 14,
-      "force": 13,
+      "force": 15,
       "dexterite": 11,
-      "constitution": 11,
+      "constitution": 12,
       "chance": 12,
       "note": "Paladin avec épée"
     },
