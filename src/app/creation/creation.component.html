@@ -1,6 +1,6 @@
-<h1>Ajouter un joueur</h1>
+<h1>Ajouter un personnage</h1>
 <div class="formulaire">
-  <form [formGroup]="nouveauJoueurForm">
+  <form [formGroup]="nouveauPersoForm">
     Pseudo du personnage : <input type="text" formControlName="name" value="" required>
     <br>
     <label>Male
@@ -32,5 +32,5 @@
     <br>
     <textarea formControlName="note" cols="100" rows="4"></textarea>
   </form>
-  <button type="submit" class="ajouter" (click)="addJoueur()"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_add_circle_black_18dp92817963810.png">Ajouter</button>
+  <button type="submit" class="ajouter" (click)="addPerso()"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_add_circle_black_18dp92817963810.png">Ajouter</button>
 </div>

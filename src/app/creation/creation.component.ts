@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Joueur } from '../joueur';
-import { JoueursService } from '../joueurs.service';
+import { Perso } from '../perso';
+import { PersosService } from '../persos.service';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 
@@ -11,8 +11,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class CreationComponent implements OnInit {
 
-  joueur: Joueur = new Joueur();
-  nouveauJoueurForm = new FormGroup({
+  perso: Perso = new Perso();
+  nouveauPersoForm = new FormGroup({
     name: new FormControl(''),
     sexe: new FormControl(''),
     taille: new FormControl(''),
@@ -28,19 +28,19 @@ export class CreationComponent implements OnInit {
     note: new FormControl('')
   });
 
-  constructor(private formBuilder: FormBuilder, private joueursService: JoueursService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private formBuilder: FormBuilder, private persosService: PersosService, private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
 
-    this.joueur.idhistoire = +this.route.snapshot.paramMap.get('id');
+    this.perso.idhistoire = +this.route.snapshot.paramMap.get('id');
   }
 
-  addJoueur() {
-    if (this.nouveauJoueurForm.valid) {
-      const joueur = this.nouveauJoueurForm.value;
-      joueur.idhistoire = this.joueur.idhistoire;
-      this.joueursService.addJoueur(joueur).subscribe(
-        _ => this.router.navigate([`histoire/${this.joueur.idhistoire}`]),
+  addPerso() {
+    if (this.nouveauPersoForm.valid) {
+      const perso = this.nouveauPersoForm.value;
+      perso.idhistoire = this.perso.idhistoire;
+      this.persosService.addPerso(perso).subscribe(
+        _ => this.router.navigate([`histoire/${this.perso.idhistoire}`]),
         error => console.log(error)
       );
     }

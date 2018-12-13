@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Joueur } from '../joueur';
-import { JoueursService } from '../joueurs.service';
+import { Perso } from '../perso';
+import { PersosService } from '../persos.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -10,29 +10,29 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class FicheComponent implements OnInit {
 
-  joueur: Joueur;
+  perso: Perso;
   id: number;
 
-  constructor(private joueursService: JoueursService,
+  constructor(private persosService: PersosService,
     private router: Router,
     private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.id = +this.route.snapshot.paramMap.get('id');
-    this.joueursService.joueurSelected$.subscribe(
-      joueur => this.joueur = joueur);
+    this.persosService.persoSelected$.subscribe(
+      perso => this.perso = perso);
   }
 
-  deleteJoueur(joueur: Joueur): void {
-    this.joueursService.deleteJoueur(joueur).subscribe(() => {
-      this.joueur = null;
-      this.joueursService.informUpdatedList();
+  deletePerso(perso: Perso): void {
+    this.persosService.deletePerso(perso).subscribe(() => {
+      this.perso = null;
+      this.persosService.informUpdatedList();
     });
   }
 
-  editJoueur(joueur: Joueur) {
-    this.joueursService.updateJoueur(joueur).subscribe(
-      joueurup => this.joueur = joueurup);
+  editPerso(perso: Perso) {
+    this.persosService.updatePerso(perso).subscribe(
+      persoup => this.perso = persoup);
   }
 }
 

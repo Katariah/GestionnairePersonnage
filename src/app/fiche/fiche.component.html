@@ -1,68 +1,68 @@
-<div *ngIf="joueur">
+<div *ngIf="perso">
     <div>
         <label>Nom :
-            <input [(ngModel)]="joueur.name" placeholder="">
+            <input [(ngModel)]="perso.name" placeholder="">
         </label>
     </div>
     <div>
         <label>Sexe :
-            <input [(ngModel)]="joueur.sexe" placeholder="">
+            <input [(ngModel)]="perso.sexe" placeholder="">
         </label>
     </div>
     <div>
         <label>Taille :
-            <input [(ngModel)]="joueur.taille" placeholder="">
+            <input [(ngModel)]="perso.taille" placeholder="">
         </label>
     </div>
     <div>
         <label>Poids :
-            <input [(ngModel)]="joueur.poids" placeholder="">
+            <input [(ngModel)]="perso.poids" placeholder="">
         </label>
     </div>
     <div>
         <label>Classe :
-            <input [(ngModel)]="joueur.classe" placeholder="">
+            <input [(ngModel)]="perso.classe" placeholder="">
         </label>
     </div>
     <div>
         <label>Race :
-            <input [(ngModel)]="joueur.race" placeholder="">
+            <input [(ngModel)]="perso.race" placeholder="">
         </label>
     </div>
     <div>
         <label>Intelligence :
-            <input type="number" [(ngModel)]="joueur.intelligence" placeholder=""> / 20
+            <input type="number" [(ngModel)]="perso.intelligence" placeholder=""> / 20
         </label>
     </div>
     <div>
         <label>Force :
-            <input type="number" [(ngModel)]="joueur.force" placeholder=""> / 20
+            <input type="number" [(ngModel)]="perso.force" placeholder=""> / 20
         </label>
     </div>
     <div>
         <label>Dextérité :
-            <input type="number" [(ngModel)]="joueur.dexterite" placeholder=""> / 20
+            <input type="number" [(ngModel)]="perso.dexterite" placeholder=""> / 20
         </label>
     </div>
 
     <div>
         <label>Constitution :
-            <input type="number" [(ngModel)]="joueur.constitution" placeholder=""> / 20
+            <input type="number" [(ngModel)]="perso.constitution" placeholder=""> / 20
         </label>
     </div>
 
     <div>
         <label>Chance :
-            <input type="number" [(ngModel)]="joueur.chance" placeholder=""> /20
+            <input type="number" [(ngModel)]="perso.chance" placeholder=""> /20
         </label>
     </div>
     <div>
         <label>Note(s) :<br>
-            <textarea [(ngModel)]="joueur.note" placeholder="" cols="50" rows="4"></textarea>
+            <textarea [(ngModel)]="perso.note" placeholder="" cols="50" rows="4"></textarea>
         </label>
     </div>
     <div class="supprimer">
-        <button class="delete" (click)="deleteJoueur(joueur)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_delete_black_18dp66294009602.png"></button>
-        <button class="delete" type="submit" (click)="editJoueur(joueur)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_edit_black_18dp.png"></button>
+        <button class="delete" (click)="deletePerso(perso)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_delete_black_18dp66294009602.png"></button>
+        <button class="delete" type="submit" (click)="editPerso(perso)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_edit_black_18dp.png"></button>
     </div>
 </div>

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HistoireComponent } from './histoire/histoire.component';
 
 import { FormsModule } from '@angular/forms';
-import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
+import { ListePersosComponent } from './liste-persos/liste-persos.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -17,7 +17,7 @@ import { CreationComponent } from './creation/creation.component';
   declarations: [
     AppComponent,
     HistoireComponent,
-    ListeJoueursComponent,
+    ListePersosComponent,
     FicheComponent,
     CreationComponent,
   ],

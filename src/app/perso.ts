@@ -1,4 +1,4 @@
-export class Joueur {
+export class Perso {
     id: number;
     name: string;
     idhistoire: number;

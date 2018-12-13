@@ -4,14 +4,14 @@
     <div class="liste">
         <button class="boutonretour" routerLink="/histoire"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_reply_all_black_18dp.png">Retour
             aux histoires</button>
-        <button class="boutonadd" routerLink="creationjoueur"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_add_circle_black_18dp.png">Ajouter
-            un joueur</button>
+        <button class="boutonadd" routerLink="creationperso"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_add_circle_black_18dp.png">Ajouter
+            un perso</button>
         
 
         <img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/separator_line.png"><br>
         
-        <li *ngFor="let joueur of joueurs" (click)="onSelect(joueur)">
-            {{joueur.name}}
+        <li *ngFor="let perso of persos" (click)="onSelect(perso)">
+            {{perso.name}}
         </li><br>
     </div>
     <div class="fiche">

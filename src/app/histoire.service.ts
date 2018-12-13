@@ -13,7 +13,7 @@ const httpOptions = {
 export class HistoireService {
 
   private histoiresUrl = 'http://localhost:3000/histoires';
-  private joueursUrl = 'http://localhost:3000/joueurs';
+  private persosUrl = 'http://localhost:3000/persos';
 
   constructor(private http: HttpClient) { }
 
@@ -31,8 +31,8 @@ export class HistoireService {
     return this.http.delete<Histoire>(url, httpOptions);
     }
 
-  // addJoueur(joueur: Joueur): Observable<Joueur> {
-  //   return this.http.post<Joueur>(this.joueursUrl, joueur, httpOptions);
+  // addPerso(perso: Perso): Observable<Perso> {
+  //   return this.http.post<Perso>(this.persosUrl, perso, httpOptions);
   // }
 
 }
