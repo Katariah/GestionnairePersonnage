@@ -11,7 +11,7 @@ import { Joueur } from '../joueur';
 export class ListeJoueursComponent implements OnInit {
 
   joueurs = [];
-  idpartie: number;
+  idhistoire: number;
   selectedJoueur: Joueur;
   id: number;
   joueur: Joueur;
@@ -22,19 +22,19 @@ export class ListeJoueursComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.idpartie = +this.route.snapshot.paramMap.get('id');
-    this.getJoueursByPartie(this.idpartie);
+    this.idhistoire = +this.route.snapshot.paramMap.get('id');
+    this.getJoueursByHistoire(this.idhistoire);
     this.joueursService.listeModifiee$.subscribe(
-      () => this.getJoueursByPartie(this.idpartie));
+      () => this.getJoueursByHistoire(this.idhistoire));
   }
 
-  getJoueursByPartie(idpartie): void {
-    if (!idpartie) {
+  getJoueursByHistoire(idhistoire): void {
+    if (!idhistoire) {
       this.joueursService
       .getJoueurs()
       .subscribe(joueurs => this.joueurs = joueurs);
     } else {
-      this.joueursService.getJoueursByPartie(idpartie)
+      this.joueursService.getJoueursByHistoire(idhistoire)
         .subscribe(joueurs => this.joueurs = joueurs);
     }
   }

@@ -6,12 +6,12 @@
   <img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/separator_line.png"><br>
 </div>
 <div class="centrer">
-  <div class="parties" *ngFor="let partie of parties">
-    <div class="module" routerLink="/partie/{{partie.id}}">
-      {{partie.name}}
+  <div class="histoires" *ngFor="let histoire of histoires">
+    <div class="module" routerLink="/histoire/{{histoire.id}}">
+      {{histoire.name}}
     </div>
     <div class="supprimer">
-      <button class="boutondelete" (click)="deletePartie(partie)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_delete_black_18dp66294009602.png"></button>
+      <button class="boutondelete" (click)="deleteHistoire(histoire)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_delete_black_18dp66294009602.png"></button>
     </div>
   </div>
 </div>
@@ -19,7 +19,7 @@
   <img class="divider" src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/separator_line.png"><br><br>
 </div>
 <div class="nouvelle" [formGroup]="myGroup">
-  Nom de la nouvelle partie :
-  <input type="text" value="" formControlName="nompartie" />
-  <button class="boutonadd" (click)="addPartie(nompartie)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_add_circle_black_18dp92817963810.png"></button>
+  Nom de la nouvelle histoire :
+  <input type="text" value="" formControlName="nomhistoire" />
+  <button class="boutonadd" (click)="addHistoire(nomhistoire)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_add_circle_black_18dp92817963810.png"></button>
 </div>

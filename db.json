@@ -1,19 +1,19 @@
 {
-  "parties": [
+  "histoires": [
     {
       "id": 1,
-      "name": "Partie 1"
+      "name": "Histoire 1"
     },
     {
       "id": 2,
-      "name": "Partie 2"
+      "name": "Histoire 2"
     },
     {
       "id": 3,
-      "name": "Partie 3"
+      "name": "Histoire 3"
     },
     {
-      "name": "Partie 4",
+      "name": "Histoire 4",
       "id": 4
     },
     {
@@ -25,7 +25,7 @@
     {
       "id": 1,
       "name": "Arthur",
-      "idpartie": 1,
+      "idhistoire": 1,
       "sexe": "Male",
       "taille": "175",
       "poids": 70,
@@ -41,7 +41,7 @@
     {
       "id": 2,
       "name": "Lancelot",
-      "idpartie": 1,
+      "idhistoire": 1,
       "sexe": "Male",
       "taille": 184,
       "poids": 90,
@@ -57,7 +57,7 @@
     {
       "id": 3,
       "name": "Perceval",
-      "idpartie": 1,
+      "idhistoire": 1,
       "sexe": "Male",
       "taille": 190,
       "poids": 95,
@@ -73,7 +73,7 @@
     {
       "id": 4,
       "name": "Merlin",
-      "idpartie": 1,
+      "idhistoire": 1,
       "sexe": "Male",
       "taille": 170,
       "poids": 93,
@@ -89,7 +89,7 @@
     {
       "id": 5,
       "name": "Frigga",
-      "idpartie": 2,
+      "idhistoire": 2,
       "sexe": "Femelle",
       "taille": 170,
       "poids": 75,
@@ -105,7 +105,7 @@
     {
       "id": 6,
       "name": "Hayana",
-      "idpartie": 3,
+      "idhistoire": 3,
       "sexe": "Femelle",
       "taille": 160,
       "poids": 50,
@@ -121,7 +121,7 @@
     {
       "id": 7,
       "name": "Rudolph",
-      "idpartie": 3,
+      "idhistoire": 3,
       "sexe": "Male",
       "taille": 155,
       "poids": 88,
@@ -137,7 +137,7 @@
     {
       "id": 8,
       "name": "Loki",
-      "idpartie": 2,
+      "idhistoire": 2,
       "sexe": "Male",
       "taille": 184,
       "poids": 72,
@@ -153,7 +153,7 @@
     {
       "id": 9,
       "name": "Thor",
-      "idpartie": 3,
+      "idhistoire": 3,
       "sexe": "Male",
       "taille": 195,
       "poids": 106,
@@ -169,7 +169,7 @@
     {
       "id": 10,
       "name": "Dovahkiin",
-      "idpartie": 1,
+      "idhistoire": 1,
       "sexe": "Femelle",
       "taille": 170,
       "poids": 93,
@@ -196,7 +196,7 @@
       "constitution": 13,
       "chance": 20,
       "note": "A griller comme un marshmallow",
-      "idpartie": 5,
+      "idhistoire": 5,
       "id": 11
     },
     {
@@ -213,7 +213,7 @@
       "constitution": 10,
       "chance": 12,
       "note": "Aussi appelée Bibibaleine",
-      "idpartie": 5,
+      "idhistoire": 5,
       "id": 12
     },
     {
@@ -230,7 +230,7 @@
       "constitution": 14,
       "chance": 17,
       "note": "Cadeau de Poséidon",
-      "idpartie": 1,
+      "idhistoire": 1,
       "id": 13
     }
   ]

@@ -1,4 +1,4 @@
-export class Partie {
+export class Histoire {
     id: number;
     name: string;
   }

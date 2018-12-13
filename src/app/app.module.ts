@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PartieComponent } from './partie/partie.component';
+import { HistoireComponent } from './histoire/histoire.component';
 
 import { FormsModule } from '@angular/forms';
 import { ListeJoueursComponent } from './liste-joueurs/liste-joueurs.component';
@@ -16,7 +16,7 @@ import { CreationComponent } from './creation/creation.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PartieComponent,
+    HistoireComponent,
     ListeJoueursComponent,
     FicheComponent,
     CreationComponent,

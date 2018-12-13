@@ -32,15 +32,15 @@ export class CreationComponent implements OnInit {
 
   ngOnInit() {
 
-    this.joueur.idpartie = +this.route.snapshot.paramMap.get('id');
+    this.joueur.idhistoire = +this.route.snapshot.paramMap.get('id');
   }
 
   addJoueur() {
     if (this.nouveauJoueurForm.valid) {
       const joueur = this.nouveauJoueurForm.value;
-      joueur.idpartie = this.joueur.idpartie;
+      joueur.idhistoire = this.joueur.idhistoire;
       this.joueursService.addJoueur(joueur).subscribe(
-        _ => this.router.navigate([`partie/${this.joueur.idpartie}`]),
+        _ => this.router.navigate([`histoire/${this.joueur.idhistoire}`]),
         error => console.log(error)
       );
     }

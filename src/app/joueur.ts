@@ -1,7 +1,7 @@
 export class Joueur {
     id: number;
     name: string;
-    idpartie: number;
+    idhistoire: number;
     sexe: String;
     taille: number;
     poids: number;

@@ -13,7 +13,7 @@ const httpOptions = {
 })
 export class JoueursService {
 
-  private partiesUrl = 'http://localhost:3000/partie';
+  private histoiresUrl = 'http://localhost:3000/histoire';
   private joueursUrl = 'http://localhost:3000/joueurs';
   private joueurSelected = new Subject<Joueur>();
   joueurSelected$ = this.joueurSelected.asObservable();
@@ -27,14 +27,14 @@ export class JoueursService {
     return this.http.get<Joueur[]>(this.joueursUrl);
   }
 
-  getJoueursByPartie(idpartie: number): Observable<Joueur[]> {
-    const joueurpartie = this.http.get<Joueur[]>(this.joueursUrl)
+  getJoueursByHistoire(idhistoire: number): Observable<Joueur[]> {
+    const joueurhistoire = this.http.get<Joueur[]>(this.joueursUrl)
       .pipe(
         map(joueurs => joueurs.filter(
-          joueur => joueur.idpartie === idpartie)
+          joueur => joueur.idhistoire === idhistoire)
         )
       );
-    return joueurpartie;
+    return joueurhistoire;
   }
 
   addJoueur(joueur: Joueur): Observable<Joueur> {
