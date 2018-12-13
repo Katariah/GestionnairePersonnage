@@ -33,3 +33,9 @@
     border-width: 0px;
     cursor: pointer;
   }
+
+  .presentation {
+   position:absolute;
+   top:0;
+   right:0;
+  }

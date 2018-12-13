@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FicheComponent } from './fiche/fiche.component';
 import { CreationComponent } from './creation/creation.component';
+import { DummyComponent } from './dummy/dummy.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CreationComponent } from './creation/creation.component';
     PartieComponent,
     ListeJoueursComponent,
     FicheComponent,
-    CreationComponent
+    CreationComponent,
+    DummyComponent
   ],
   imports: [
     BrowserModule,

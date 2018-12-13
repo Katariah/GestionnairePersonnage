@@ -64,3 +64,9 @@
 .divider {
   text-align: center;
 }
+
+  .presentation {
+   position:absolute;
+   top:0;
+   right:0;
+  }

@@ -215,6 +215,23 @@
       "note": "Aussi appelée Bibibaleine",
       "idpartie": 5,
       "id": 12
+    },
+    {
+      "name": "Pegase",
+      "sexe": "Male",
+      "taille": 200,
+      "poids": 300,
+      "photo": "",
+      "classe": "Volant",
+      "race": "Cheval",
+      "intelligence": 18,
+      "force": 18,
+      "dexterite": 12,
+      "constitution": 14,
+      "chance": 17,
+      "note": "Cadeau de Poséidon",
+      "idpartie": 1,
+      "id": 13
     }
   ]
 }
