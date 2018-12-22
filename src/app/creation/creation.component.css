@@ -11,9 +11,85 @@ h1 {
     margin-left : 3%;
   }
 
+  .formulaire img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .formulaire img:hover {
+    width: 45px;
+    height: 45px;
+  }
+
   .ajouter {
       margin: 15px;
       background: transparent;
       border-width: 0px;
       cursor: pointer;
   }
+
+  .feuille {
+    background-color: rgb(235, 235, 235);
+    width: 80%;
+    padding:2%;
+    color: black;
+    margin-left: 8%;
+
+}
+
+textarea {
+    color: black;
+    margin-left: 20px;
+    background-color: #bdbdbd;
+}
+
+input {
+  color: black;
+  margin-left: 20px;
+  background-color: #bdbdbd;
+}
+
+.coin {
+  position: relative;
+  -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+}
+
+.coin:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 70px solid #eee;
+  border-left: 70px solid transparent;
+  -webkit-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  -moz-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+}
+
+.coin:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0px;
+  height: 0px;
+  border-top: 69px solid #650101; 
+  border-right: 69px solid transparent;
+}
+
+h1 {
+  font-family: "Christmas Time Personal Use", "Lucida Sans";
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.zoneajout {
+  text-align: center;
+  color: black;
+}

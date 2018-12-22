@@ -1,20 +1,65 @@
-/* Application-wide Styles */
 h1 {
-    color: rgb(34, 21, 6);
-    font-family: "Edwardian Script ITC";
-    font-size: 40pt;
-    text-align: center;
-    margin-top : 1%;
-    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: "Calling Angels Personal Use";
+    font-size: 28pt;
+    text-align: left;
+    margin-top : 0%;
+    margin-left: 3%;
+    /* font-weight: bold; */
   }
+
+  .barre {
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+  }
+
   body {
     margin: 0em;
   }
   body, input[type="text"], button {
     color: #888;
-    font-family: Cambria, Georgia;
+    font-family: "Santa'sSleighFull", Georgia;
   }
   /* everywhere else */
   * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Santa'sSleighFull", Helvetica, sans-serif;
+  }
+
+  .corps {
+    position: absolute;
+    top: 80px;
+    width: 98%;
+    font-family: "Santa'sSleighFull";
+    padding-left: 1%;
+    padding-bottom: 30%;
+    /* right: 5px; */
+  }
+
+  .boutonsjoueurs {
+    text-align: right;
+    position: absolute;
+    top: 3px;;
+    right: 60px;
+    cursor: pointer;
+  }
+
+  .boutonsretour {
+    text-align: right;
+    position: absolute;
+    top: 3px;;
+    right: 5px;
+    cursor: pointer;
+  }
+
+  .boutonsjoueurs img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .boutonsretour img {
+    width: 50px;
+    height: 50px;
   }

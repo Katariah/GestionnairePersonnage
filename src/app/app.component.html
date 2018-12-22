@@ -1,8 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="barre">
   <h1>
-   {{ title }}
+    {{ title }}
+    <div class="boutonsjoueurs" routerLink="/persos"><img title="Afficher tous les personnages" src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/listejoueurs.png"></div>
+    <div class="boutonsretour" routerLink="/histoire"><img title="Retour à l'accueil" src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/iconemaison.png"></div>
   </h1>
+
 </div>
 
-<router-outlet></router-outlet>
+<div class="corps">
+  <router-outlet></router-outlet>
+</div>

@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FicheComponent } from './fiche/fiche.component';
 import { CreationComponent } from './creation/creation.component';
+import { UniversComponent } from './univers/univers.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CreationComponent } from './creation/creation.component';
     ListePersosComponent,
     FicheComponent,
     CreationComponent,
+    UniversComponent,
   ],
   imports: [
     BrowserModule,

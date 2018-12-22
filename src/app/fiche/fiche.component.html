@@ -1,68 +1,113 @@
-<div *ngIf="perso">
+<div class="feuille coin" *ngIf="perso">
+    <h1>Fiche pour {{perso.prenom}} {{perso.nom}}</h1>
     <div>
-        <label>Nom :
-            <input [(ngModel)]="perso.name" placeholder="">
-        </label>
+        <label>Nom : </label><br>
+        <textarea [(ngModel)]="perso.nom" placeholder="" cols="10" rows="1"></textarea>
     </div>
     <div>
-        <label>Sexe :
-            <input [(ngModel)]="perso.sexe" placeholder="">
-        </label>
+        <label>Prenom : </label><br>
+        <textarea [(ngModel)]="perso.prenom" placeholder="" cols="10" rows="1"></textarea>
     </div>
     <div>
-        <label>Taille :
-            <input [(ngModel)]="perso.taille" placeholder="">
-        </label>
+        <label>Sexe : </label><br>
+        <textarea [(ngModel)]="perso.sexe" placeholder="" cols="10" rows="1"></textarea>
     </div>
     <div>
-        <label>Poids :
-            <input [(ngModel)]="perso.poids" placeholder="">
-        </label>
+        <label>Naissance : </label><br>
+        <textarea [(ngModel)]="perso.naissance" placeholder="" cols="10" rows="1"></textarea>
     </div>
     <div>
-        <label>Classe :
-            <input [(ngModel)]="perso.classe" placeholder="">
-        </label>
+        <label>Carrure : </label><br>
+        <textarea [(ngModel)]="perso.carrure" placeholder="" cols="50" rows="2"></textarea>
     </div>
     <div>
-        <label>Race :
-            <input [(ngModel)]="perso.race" placeholder="">
-        </label>
+        <label>Peau :</label><br>
+        <textarea [(ngModel)]="perso.peau" placeholder="" cols="50" rows="2"></textarea>
     </div>
     <div>
-        <label>Intelligence :
-            <input type="number" [(ngModel)]="perso.intelligence" placeholder=""> / 20
-        </label>
+        <label>Cheveux :</label><br>
+        <textarea [(ngModel)]="perso.cheveux" placeholder="" cols="50" rows="2"></textarea>
     </div>
     <div>
-        <label>Force :
-            <input type="number" [(ngModel)]="perso.force" placeholder=""> / 20
-        </label>
+        <label>Yeux : </label><br>
+        <textarea [(ngModel)]="perso.yeux" placeholder="" cols="10" rows="1"></textarea>
     </div>
     <div>
-        <label>Dextérité :
-            <input type="number" [(ngModel)]="perso.dexterite" placeholder=""> / 20
-        </label>
-    </div>
-
-    <div>
-        <label>Constitution :
-            <input type="number" [(ngModel)]="perso.constitution" placeholder=""> / 20
-        </label>
-    </div>
-
-    <div>
-        <label>Chance :
-            <input type="number" [(ngModel)]="perso.chance" placeholder=""> /20
-        </label>
+        <label>Style :</label><br>
+        <textarea [(ngModel)]="perso.style" placeholder="" cols="50" rows="2"></textarea>
     </div>
     <div>
-        <label>Note(s) :<br>
-            <textarea [(ngModel)]="perso.note" placeholder="" cols="50" rows="4"></textarea>
-        </label>
+        <label>Qualités :</label><br>
+        <textarea [(ngModel)]="perso.qualites" placeholder="" cols="50" rows="3"></textarea>
     </div>
-    <div class="supprimer">
-        <button class="delete" (click)="deletePerso(perso)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_delete_black_18dp66294009602.png"></button>
-        <button class="delete" type="submit" (click)="editPerso(perso)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_edit_black_18dp.png"></button>
+    <div>
+        <label>Défauts :</label><br>
+        <textarea [(ngModel)]="perso.defauts" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Caractère :</label><br>
+        <textarea [(ngModel)]="perso.caractere" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Ambition :</label><br>
+        <textarea [(ngModel)]="perso.ambition" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Competences :</label><br>
+        <textarea [(ngModel)]="perso.competences" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Richesse :</label><br>
+        <textarea [(ngModel)]="perso.richesse" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Statut :</label><br>
+        <textarea [(ngModel)]="perso.statut" placeholder="" cols="50" rows="2"></textarea>
+    </div>
+    <div>
+        <label>Emploi :</label><br>
+        <textarea [(ngModel)]="perso.emploi" placeholder="" cols="50" rows="2"></textarea>
+    </div>
+    <div>
+        <label>Habitat :</label><br>
+        <textarea [(ngModel)]="perso.habitat" placeholder="" cols="50" rows="2"></textarea>
+    </div>
+    <div>
+        <label>Famille :</label><br>
+        <textarea [(ngModel)]="perso.famille" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Amis :</label><br>
+        <textarea [(ngModel)]="perso.amis" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Amour :</label><br>
+        <textarea [(ngModel)]="perso.amour" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Animaux :</label><br>
+        <textarea [(ngModel)]="perso.animaux" placeholder="" cols="50" rows="2"></textarea>
+    </div>
+    <div>
+        <label>Passé :</label><br>
+        <textarea [(ngModel)]="perso.passe" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Réalisations :</label><br>
+        <textarea [(ngModel)]="perso.realisations" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Voyages :</label><br>
+        <textarea [(ngModel)]="perso.voyages" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div>
+        <label>Autre :</label><br>
+        <textarea [(ngModel)]="perso.autre" placeholder="" cols="50" rows="3"></textarea>
+    </div>
+    <div class="centrerbouton">
+        <div class="supprimer">
+            <button class="delete" type="submit" (click)="editPerso(perso)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/iconeedition.png"></button>
+            <button class="delete" (click)="deletePerso(perso)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/Iconepoubelle.png"></button>
+        </div>
     </div>
 </div>

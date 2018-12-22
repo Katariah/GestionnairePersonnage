@@ -1,36 +1,119 @@
-<h1>Ajouter un personnage</h1>
-<div class="formulaire">
-  <form [formGroup]="nouveauPersoForm">
-    Pseudo du personnage : <input type="text" formControlName="name" value="" required>
-    <br>
-    <label>Male
-      <input type="radio" formControlName="sexe" value="male">
-    </label>
-    <label>Femelle
-      <input type="radio" formControlName="sexe" value="femelle">
-    </label>
-    <br>
-    Taille en cm : <input type="number" formControlName="taille" value="">
-    <br>
-    Poids en kg : <input type="number" formControlName="poids" value="">
-    <br>
-    Classe : <input type="text" formControlName="classe" value="">
-    <br>
-    Race : <input type="text" formControlName="race" value="">
-    <br>
-    Intelligence : <input type="number" formControlName="intelligence" value=""> / 20
-    <br>
-    Force : <input type="number" formControlName="force" value=""> / 20
-    <br>
-    Dextérité : <input type="number" formControlName="dexterite" value=""> / 20
-    <br>
-    Constitution : <input type="number" formControlName="constitution" value=""> / 20
-    <br>
-    Chance : <input type="number" formControlName="chance" value=""> / 20
-    <br>
-    Notes du MJ :
-    <br>
-    <textarea formControlName="note" cols="100" rows="4"></textarea>
-  </form>
-  <button type="submit" class="ajouter" (click)="addPerso()"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_add_circle_black_18dp92817963810.png">Ajouter</button>
+<div class="feuille coin">
+  <h1>Ajouter un personnage</h1>
+  <div class="formulaire">
+    <form [formGroup]="nouveauPersoForm">
+      <div>
+        <label>Nom :</label>
+        <input formControlName="nom" placeholder="">
+      </div>
+      <div>
+        <label>Prenom :</label>
+        <input formControlName="prenom" placeholder="">
+      </div>
+      <div>
+        <label>Homme
+          <input type="radio" formControlName="sexe" value="homme">
+        </label>
+        <label>Femme
+          <input type="radio" formControlName="sexe" value="femme">
+        </label>
+      </div>
+      <div>
+        <label>Naissance :</label><br>
+        <input formControlName="naissance" placeholder="">
+      </div>
+      <div>
+        <label>Carrure : (taille, poids, musculature, posture...)</label><br>
+        <textarea formControlName="carrure" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Couleur peau :</label><br>
+        <textarea formControlName="peau" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Couleur et apparence des cheveux : (long, bouclés, fins, crépus...) :</label><br>
+        <textarea formControlName="cheveux" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Couleur des yeux :</label><br>
+        <input formControlName="yeux" placeholder="">
+      </div>
+      <div>
+        <label>Style vestimentaire :</label><br>
+        <textarea formControlName="style" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Qualités :</label><br>
+        <textarea formControlName="qualites" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Défauts :</label><br>
+        <textarea formControlName="defauts" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Caractère : (joyeux, taciturne, etc... et réaction à certaines situations, pensées sur la mort, la
+          société, les enfants, les autres...)</label><br>
+        <textarea formControlName="caractere" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Ambition :</label><br>
+        <textarea formControlName="ambition" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Competences :</label><br>
+        <textarea formControlName="competences" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Richesse :</label><br>
+        <textarea formControlName="richesse" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Statut marital (marié, veuf, célibataire...) :</label><br>
+        <textarea formControlName="statut" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Emploi :</label><br>
+        <textarea formControlName="emploi" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Habitat :</label><br>
+        <textarea formControlName="habitat" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Famille :</label><br>
+        <textarea formControlName="famille" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Amis :</label><br>
+        <textarea formControlName="amis" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Amour :</label><br>
+        <textarea formControlName="amour" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Animaux domestiques :</label><br>
+        <textarea formControlName="animaux" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Passé :</label><br>
+        <textarea formControlName="passe" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Réalisations (personnelles ou professionnelles) :</label><br>
+        <textarea formControlName="realisations" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Voyages :</label><br>
+        <textarea formControlName="voyages" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+      <div>
+        <label>Autre :</label><br>
+        <textarea formControlName="autre" placeholder="" cols="50" rows="4"></textarea>
+      </div>
+    </form>
+    <div class="zoneajout">
+      <button type="submit" class="ajouter" (click)="addPerso()"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/iconeajout.png">Ajouter</button>
+    </div>
+  </div>
 </div>

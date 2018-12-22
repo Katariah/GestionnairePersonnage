@@ -1,32 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     margin: 0%;
-    background-image: url("https://i.pinimg.com/originals/00/b5/0c/00b50c32bcf11110df185e2514dbf561.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "French Script MT";
+    background-color: #650101;
+    font-family: "Santa'sSleighFull";
     font-size: 24pt;
+    color: white;
 }
 
 input {
     background: transparent;
-    font-family: "French Script MT";
+    font-family: "Santa'sSleighFull";
     font-size: 18pt;
+    color: black;
 }
 
 textarea {
     background: transparent;
-    font-family: "French Script MT";
+    font-family: "Santa'sSleighFull";
     font-size: 18pt;
+    color: white;
 }
 
 li {
-list-style-image: url('https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_visibility_black_18dp.png');
-padding-left: 30px
-}
-
-input[type=number] {
-    width: 40px;
+list-style-image: url('https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/pixel.png');
+padding-left: 30px;
+background-color: white;
+color: black;
+vertical-align: middle;
 }
 
 img {
@@ -37,7 +37,7 @@ img {
 }
 
 button {
-    font-family: "French Script MT";
+    font-family: "Santa'sSleighFull";
     font-size: 24pt;
     /* display: table; */
     vertical-align: middle;

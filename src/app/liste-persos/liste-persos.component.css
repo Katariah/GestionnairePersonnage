@@ -18,6 +18,21 @@
 
 .liste {
     vertical-align: top;
+    text-align: center;
+}
+
+.listepersos img {
+    width: 30px;
+    height: 30px;
+}
+
+li:hover {
+    font-weight: bold;
+}
+
+.listepersos img:hover {
+    width: 35px;
+    height: 35px;
 }
 
 .boutonadd {
@@ -25,6 +40,13 @@
     border-width: 0px;
     cursor: pointer;
     padding-left: 30px;
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .boutonadd img {
+      width: 30px;
+      height: 30px;
   }
 
   .boutonretour {
@@ -34,8 +56,34 @@
     cursor: pointer;
   }
 
-  .presentation {
-   position:absolute;
-   top:0;
-   right:0;
-  }
+.listepersos {
+    font-family: "Santa'sSleighFull", "Lucida Sans";
+    text-align: left;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    border-radius: 5px;
+    border-left: 10px solid #000000; 
+    box-shadow: 2px -2px 5px 0 rgba(0,0,0,.1),
+         -2px -2px 5px 0 rgba(0,0,0,.1),
+        2px 2px 5px 0 rgba(0,0,0,.1),
+        -2px 2px 5px 0 rgba(0,0,0,.1);
+    font-size: 30px;
+    letter-spacing: 2px;
+    transition: 0.3s all linear;
+    width: 80%;
+    cursor: pointer;
+    vertical-align:middle;
+    }
+
+    .li {
+        line-height: 200px;
+    }
+
+    .listepersos img {
+        width: 25px;
+        height: 25px;
+    }
+   

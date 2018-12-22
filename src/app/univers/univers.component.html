@@ -1,0 +1,22 @@
+<div class="mere">
+  <div class="centrer">
+    <div class="univers" *ngFor="let univers of univers">
+      <div class="module" routerLink="/univers/{{univers.id}}">
+        {{univers.name}}
+      </div>
+      <div class="supprimer">
+        <button class="boutondelete" (click)="deleteUnivers(univers)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/Iconepoubelle.png"></button>
+      </div>
+    </div>
+  </div>
+  <div class="divider">
+    <img class="divider" src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/separator_line.png"><br><br>
+  </div>
+  <div class="nouvelle" [formGroup]="myGroup">
+    Nom du nouvel univers :
+    <input type="text" value="" formControlName="nomunivers" />
+    <button class="boutonadd" (click)="addUnivers(nomunivers)"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/iconeajout.png"></button>
+    
+  </div>
+  <!-- <br> -->
+  </div>

@@ -1,11 +1,11 @@
-  .module:hover {
+.module:hover {
     cursor: pointer;
     color: #080808;
     justify-content:center;
     align-items:center;
   }
 
-  .histoires {
+  .univers {
       text-align: center;
       display: inline-block;
       align-items: center;

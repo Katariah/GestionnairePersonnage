@@ -1,17 +1,12 @@
-<div class="presentation"><a href="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/schemaintercomponent23182311124.png"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_speaker_notes_black_18dp.png"></a></div>
 <div class="parent">
 
     <div class="liste">
-        <button class="boutonretour" routerLink="/histoire"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_reply_all_black_18dp.png">Retour
-            aux histoires</button>
-        <button class="boutonadd" routerLink="creationperso"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/baseline_add_circle_black_18dp.png">Ajouter
+        <button class="boutonadd" routerLink="creationperso"><img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/iconeajout.png">Ajouter
             un perso</button>
+        <img class="divider" src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/separator_line.png"><br>
         
-
-        <img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/separator_line.png"><br>
-        
-        <li *ngFor="let perso of persos" (click)="onSelect(perso)">
-            {{perso.name}}
+        <li class="listepersos" *ngFor="let perso of persos" (click)="onSelect(perso)">
+            <img src="https://www.mesmedias.com/users/cf78d07037791ed4d915dfccf88ddacd/BoutonsGestionnairePersonnageliste.png"> {{perso.prenom}} {{perso.nom}}
         </li><br>
     </div>
     <div class="fiche">

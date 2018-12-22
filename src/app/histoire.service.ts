@@ -2,6 +2,7 @@ import { Histoire } from './histoire';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { filter, map } from 'rxjs/operators';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -19,6 +20,16 @@ export class HistoireService {
 
   getHistoires(): Observable<Histoire[]> {
     return this.http.get<Histoire[]>(this.histoiresUrl);
+  }
+
+  getHistoirebyUnivers(idunivers: number): Observable<Histoire[]> {
+    const histoireuniv = this.http.get<Histoire[]>(this.histoiresUrl)
+    .pipe(
+      map(histoires => histoires.filter(
+        histoire => histoire.idunivers === idunivers)
+      )
+    );
+  return histoireuniv;
   }
 
   addHistoire(histoire: Histoire): Observable<Histoire> {
