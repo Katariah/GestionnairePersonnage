@@ -73,7 +73,6 @@ li:hover {
     font-size: 30px;
     letter-spacing: 2px;
     transition: 0.3s all linear;
-    width: 80%;
     cursor: pointer;
     vertical-align:middle;
     }

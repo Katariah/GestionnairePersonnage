@@ -41,7 +41,7 @@ export class UniversComponent implements OnInit {
       });
   }
 
-  deleteHistoire (univers: Univers): void {
+  deleteUnivers (univers: Univers): void {
     this.universService.deleteUnivers(univers).subscribe(() => {
         this.universService.getUnivers().subscribe(univers => this.univers = univers);
       });

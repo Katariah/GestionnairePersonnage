@@ -8,7 +8,7 @@ import { UniversComponent } from './univers/univers.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/univers', pathMatch: 'full' },
-  // { path: 'histoire', component: HistoireComponent },
+  { path: 'histoires', component: HistoireComponent },
   { path: 'histoire/:id', component:  ListePersosComponent },
   { path: 'persos', component: ListePersosComponent },
   { path: 'histoire/:id/creationperso', component: CreationComponent },

@@ -3,17 +3,25 @@
     color: #080808;
     justify-content:center;
     align-items:center;
+
+  text-align: center;
+  background: linear-gradient(#525252, #3b3b3b);
+  color: #4d0101;
+  padding: 20px;
+  border-width: 10px;
+  border-radius: 40px 100px 100px 100px;
+  width: 45%;
+  font-weight: bold;
   }
 
   .histoires {
       text-align: center;
-      display: inline-block;
+      display: flex;
       align-items: center;
       justify-content:center;
       margin-left: 5px;
       margin-right: 5px;
-      margin-top: 30px;
-      margin-bottom: 20px;
+      padding-top: 15px;
   }
 
   .nouvelle {
@@ -42,6 +50,7 @@
 }
 
 .module {
+  text-align: center;
   background: linear-gradient(#650101, #460101);
   color: #c7c7c7;
   padding: 20px;
@@ -49,22 +58,25 @@
   border-radius: 40px 100px 100px 100px;
   justify-content:center;
   align-items:center;
+  width: 45%;
 }
 
 .boutondelete {
   background: transparent;
   border-width: 0px;
   cursor: pointer;
+  text-align: left;
 
 }
 .boutondelete img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+  text-align: left;
 }
 
 .boutondelete img:hover {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
 }
 
 .boutonadd {
@@ -93,11 +105,11 @@
   }
 
   .nouvelle img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
 
   .nouvelle img:hover {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
   }

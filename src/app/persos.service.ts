@@ -13,7 +13,6 @@ const httpOptions = {
 })
 export class PersosService {
 
-  private histoiresUrl = 'http://localhost:3000/histoire';
   private persosUrl = 'http://localhost:3000/persos';
   private persoSelected = new Subject<Perso>();
   persoSelected$ = this.persoSelected.asObservable();

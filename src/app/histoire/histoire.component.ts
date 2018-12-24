@@ -15,6 +15,9 @@ export class HistoireComponent implements OnInit {
   histoires: Histoire[];
   myGroup: FormGroup = new FormGroup({ nomhistoire: new FormControl() });
   idhistoire: number;
+  idunivers: number;
+  histoire: Histoire;
+  boolId: boolean = true;
 
   constructor(
     private histoireService: HistoireService,
@@ -23,28 +26,46 @@ export class HistoireComponent implements OnInit {
     private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.getHistoires();
+    this.idunivers = +this.route.snapshot.paramMap.get('id');
+    this.getHistoirebyUnivers(this.idunivers);
     this.myGroup = this.formBuilder.group({ nomhistoire: '' });
-    this.idhistoire = +this.route.snapshot.paramMap.get('id');
+    // this.idhistoire = +this.route.snapshot.paramMap.get('id');
+    this.verifId();
+    
   }
 
-  getHistoires(): void {
-    this.histoireService.getHistoires().subscribe(histoires => this.histoires = histoires);
+  getHistoirebyUnivers(idunivers): void {
+    if (!idunivers) {
+      this.histoireService
+        .getHistoires()
+        .subscribe(histoires => this.histoires = histoires);
+    } else {
+      this.histoireService.getHistoirebyUnivers(idunivers)
+        .subscribe(histoires => this.histoires = histoires);
+    }
   }
 
-  addHistoire (name: String): void {
+  addHistoire(name: String) {
     name = this.myGroup.value.nomhistoire;
     if (!name) { return; }
-    this.histoireService.addHistoire
-      ({ name: name } as Histoire).subscribe(histoire => {
-        this.histoires.push(histoire);
-      });
+    // this.histoire.idunivers = this.idunivers;
+    this.histoireService.addHistoire(({ name: name, idunivers: this.idunivers } as Histoire)).subscribe(histoire => {
+      this.histoires.push(histoire);
+    });
   }
 
-  deleteHistoire (histoire: Histoire): void {
-    this.histoireService.deleteHistoire(histoire).subscribe(() => {
-        this.histoireService.getHistoires().subscribe(histoires => this.histoires = histoires);
-      });
+deleteHistoire(histoire: Histoire): void {
+  this.histoireService.deleteHistoire(histoire).subscribe(() => {
+    this.histoireService.getHistoirebyUnivers(this.idunivers).subscribe(histoires => this.histoires = histoires);
+  });
+}
+
+verifId(): boolean{
+  if (!this.idunivers) {
+    this.boolId = false;
   }
+  return this.boolId 
+}
+
 }
 

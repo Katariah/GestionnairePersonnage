@@ -13,19 +13,32 @@ export class CreationComponent implements OnInit {
 
   perso: Perso = new Perso();
   nouveauPersoForm = new FormGroup({
-    name: new FormControl(''),
+    nom: new FormControl(''),
+    prenom: new FormControl(''),
     sexe: new FormControl(''),
-    taille: new FormControl(''),
-    poids: new FormControl(''),
-    photo: new FormControl(''),
-    classe: new FormControl(''),
-    race: new FormControl(''),
-    intelligence: new FormControl(''),
-    force: new FormControl(''),
-    dexterite: new FormControl(''),
-    constitution: new FormControl(''),
-    chance: new FormControl(''),
-    note: new FormControl('')
+    carrure: new FormControl(''),
+    peau: new FormControl(''),
+    cheveux: new FormControl(''),
+    yeux: new FormControl(''),
+    style: new FormControl(''),
+    qualites: new FormControl(''),
+    defauts: new FormControl(''),
+    caractere: new FormControl(''),
+    ambition: new FormControl(''),
+    competences: new FormControl(''),
+    richesse: new FormControl(''),
+    statut: new FormControl(''),
+    emploi: new FormControl(''),
+    habitat: new FormControl(''),
+    famille: new FormControl(''),
+    amis: new FormControl(''),
+    amour: new FormControl(''),
+    animaux: new FormControl(''),
+    naissance: new FormControl(''),
+    passe: new FormControl(''),
+    realisations: new FormControl(''),
+    voyages: new FormControl(''),
+    autre: new FormControl('')
   });
 
   constructor(private formBuilder: FormBuilder, private persosService: PersosService, private router: Router, private route: ActivatedRoute) { }

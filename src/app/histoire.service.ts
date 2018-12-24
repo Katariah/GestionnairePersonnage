@@ -13,6 +13,7 @@ const httpOptions = {
 })
 export class HistoireService {
 
+  private universUrl = 'http://localhost:3000/univers';
   private histoiresUrl = 'http://localhost:3000/histoires';
   private persosUrl = 'http://localhost:3000/persos';
 
@@ -40,6 +41,11 @@ export class HistoireService {
     const id = typeof histoire === 'number' ? histoire : histoire.id;
     const url = `${this.histoiresUrl}/${histoire.id}`;
     return this.http.delete<Histoire>(url, httpOptions);
+    }
+
+    getHistoireById(id: number): Observable<Histoire> {
+      const histoire = this.http.get<Histoire>(`${this.histoiresUrl}/${id}`);
+      return histoire;
     }
 
   // addPerso(perso: Perso): Observable<Perso> {
